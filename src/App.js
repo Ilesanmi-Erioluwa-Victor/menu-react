@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Menu from "./Menu";
 import Categories from "./Categories";
 import items from "./Data";
+
+// This is used to avoid repetitions of categories and also appending "all" to the allCategories
 const allCategories = ["all", ...new Set(items.map((item) => item.category))];
 
 function App() {
